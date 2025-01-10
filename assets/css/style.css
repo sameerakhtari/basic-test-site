@@ -28,7 +28,7 @@
      --dropdown-bg: #21242d;
      --dropdown-hover: rgb(42 46 60);
      --popup-bg: rgb(22 25 37);
-     --search-bg: #14162b;
+     --search-bg: #bba0dc9b;
      --overlay-bg: rgba(36, 39, 59, 0.3);
      --scrollbar-bg: rgb(1 2 3 / 40%);
    }
@@ -1097,3 +1097,4 @@
     background-position: center;
     z-index: -1;
 }
+
