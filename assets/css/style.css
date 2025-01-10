@@ -504,7 +504,7 @@
      line-height: 1.7em;
      color: #ebecec;
      display: -webkit-box;
-     -webkit-line-clamp: 4;
+     -webkit-line-clamp: 5;
      -webkit-box-orient: vertical;
      line-clamp: 4;
      overflow: hidden;
@@ -533,7 +533,7 @@
    }
    
    /* Example image in the content header */
-   .content-wrapper-img {
+  /* .content-wrapper-img {
      width: 186px;
      object-fit: cover;
      margin-top: -25px;
@@ -543,7 +543,26 @@
      .content-wrapper-img {
        width: 110px;
      }
-   }
+   }*/
+   /* Example image in the content header */
+.content-wrapper-img {
+    width: 186px; /* Maintain the existing width */
+    height: 186px; /* Ensure height matches width for a perfect circle */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Prevent distortion */
+    object-position: center;
+    margin-top: -25px; /* Maintain existing margin */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 570px) {
+    .content-wrapper-img {
+      width: 110px; /* Maintain responsive width */
+      height: 110px; /* Match height to width for a circle */
+      border-radius: 50%; /* Keep it circular in smaller screens */
+    }
+  }
+  
    
    /* Section & Lists */
    .content-section {
