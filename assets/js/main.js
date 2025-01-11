@@ -111,3 +111,11 @@ overlay.addEventListener("click", closeLeftPanel); // Close on overlay click
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeLeftPanel(); // Close on Escape key press
 });
+
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.header-menu');
+    menu.classList.toggle('visible');
+  }
+  
