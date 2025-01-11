@@ -844,7 +844,7 @@
    /* -----------------------------------------------------
       10. Apps Card
       ----------------------------------------------------- */
-   .apps-card {
+   /*.apps-card {
      display: flex;
      align-items: center;
      flex-wrap: wrap;
@@ -911,8 +911,86 @@
        margin-left: 0;
      }
    }
-   
-   /* Scrollbar styling */
+   */
+   .apps-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Spacing between cards */
+    width: 100%;
+  }
+  
+  .app-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--content-bg);
+    border-radius: 14px;
+    border: 1px solid var(--theme-bg-color);
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 300px; /* Fixed height for uniformity */
+  }
+  
+  .app-card:hover {
+    transform: scale(1.02);
+    background-color: var(--theme-bg-color);
+  }
+  
+  .app-card svg {
+    width: 28px;
+    border-radius: 6px;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  
+  .app-card span {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .app-card__subtext {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6; /* Limit to 6 lines */
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+  
+  .app-card-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  /* Responsive Breakpoints */
+  @media screen and (max-width: 1110px) {
+    .apps-card {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+  
+  @media screen and (max-width: 565px) {
+    .apps-card {
+      grid-template-columns: 1fr; /* 1 card per row */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+   /*Scrollbar styling */
    ::-webkit-scrollbar {
      width: 6px;
      border-radius: 10px;
