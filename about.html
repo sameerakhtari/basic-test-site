@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page 1</title>
+  <title>About</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <div class="image-bg">
-  </div>
+  <div class="image-bg"></div>
 
   <div class="dark-light">
     <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -42,29 +42,60 @@
         <img class="profile-img" src="assets/images/me.jpeg" alt="Profile" />
       </div>
     </div>
-
+    
     <div class="wrapper">
       <div class="main-container">
         <div class="content-wrapper">
-          <div class="content-wrapper-header">
-            <h3>About</h3>
-          </div>
-          <div class="content-section">
-            <p>About Me</p>
-          </div>
-          <div class="content-section">
-            <p>Hello, I'm Sameer Akhtar, a passionate and dedicated tech enthusiast with a strong foundation in software and hardware development. My journey in technology began with a curiosity to explore how things work and has evolved into a career driven by innovation and problem-solving. I specialize in building efficient and scalable solutions, leveraging my skills across multiple domains, including software development, hardware integration, and cutting-edge technologies.</p>
-            <p>I am proficient in a wide range of programming languages, tools, and frameworks, including Python, C/C++, JavaScript, React, Flask, and MongoDB, as well as hardware platforms like Arduino and microcontrollers. My expertise spans from web development and system design to embedded systems and IoT, allowing me to tackle challenges across diverse fields.</p>
-            <p>Beyond my technical capabilities, I take pride in being a collaborative team player and an effective communicator, always eager to learn and grow. I thrive in environments that encourage creativity, innovation, and continuous improvement. My passion for technology is matched only by my commitment to delivering impactful solutions that make a difference.</p>
-            <p>In my free time, I enjoy exploring new technologies, engaging with tech communities, and staying updated on the latest industry trends. I am excited to contribute to projects that challenge me to push the boundaries of what’s possible and look forward to collaborating with like-minded individuals who share a vision for a tech-driven future.</p>
-            <p>Feel free to view my portfolio <a href="https://sameerakhtari.github.io">here.</a></p>
-          </div>
-          
+          <section class="about section" id="about">
+            <div class="about__container container grid">
+              <h2 class="section__title-1">
+                <span>About Me.</span>
+              </h2>
+
+              <div class="about__perfil">
+                <div class="about__image">
+                  <img src="https://images.unsplash.com/photo-1577565177023-d0f29c354b69?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTI3Njk4OTB8&ixlib=rb-4.0.3&q=85" alt="About Me" class="about__img" />
+                  <div class="about__shadow"></div>
+                  <div class="geometric-box"></div>
+                  <div class="about__box"></div>
+                </div>
+              </div>
+
+              <div class="about__info">
+                <p class="about__description">
+                  Passionate about creating <b>Web Pages</b> with
+                  <b>UI/UX User Interface</b>, I have years of
+                  experience and many clients are happy with
+                  the projects carried out.
+                </p>
+
+                <ul class="about__list">
+                  <li class="about__item">
+                    <b>My Skills Are:</b> HTML, CSS, JavaScript,
+                    React, Git & GitHub, Bootstrap, Flutter &
+                    Figma.
+                  </li>
+                </ul>
+
+                <div class="about__buttons">
+                  <a href="#contact" class="button">
+                    <i class="ri-send-plane-line"></i> Contact Me
+                  </a>
+
+                  <a href="https://www.linkedin.com/" target="_blank" class="button__ghost">
+                    <i class="ri-linkedin-box-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
+  
+  
+    
   </div>
-
   <script src="assets/js/main.js"></script>
 </body>
 </html>
