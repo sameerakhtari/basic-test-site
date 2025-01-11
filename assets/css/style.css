@@ -1620,49 +1620,4 @@ img {
   
 
 
-  /*responsive menu*/
-  /* Mobile Menu */
-.hamburger-menu {
-    display: none;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  .hamburger-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .header-menu {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .header-menu.mobile-hidden {
-    display: none; /* Hide the menu by default on mobile */
-  }
-  
-  @media (max-width: 768px) {
-    .hamburger-menu {
-      display: block; /* Show hamburger menu on mobile */
-    }
-  
-    .header-menu {
-      flex-direction: column;
-      gap: 10px;
-      position: absolute;
-      top: 60px; /* Adjust based on your header height */
-      left: 0;
-      right: 0;
-      background-color: var(--theme-bg-color); /* Use your theme's background */
-      padding: 10px;
-      transform: translateY(-100%);
-      z-index: 1000;
-    }
-  
-    .header-menu.visible {
-      transform: translateY(0);
-    }
-  }
   
