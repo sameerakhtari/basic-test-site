@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page 1</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=hind@400,300,500,600,1,700&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="image-bg">
-    </div>
+  <div class="image-bg"></div>
 
   <div class="dark-light">
     <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -21,7 +21,7 @@
     <div class="header">
       <div class="menu-circle"></div>
       <div class="header-menu">
-        <a class="menu-link" href="index.html">Home</a>
+        <a class="menu-link" href="/">Home</a>
         <a class="menu-link" href="about.html">About</a>
         <a class="menu-link is-active" href="contact.html">Contact</a>
         <a class="menu-link" href="privacy&policy.html">Privacy & policy</a>
@@ -46,21 +46,35 @@
     <div class="wrapper">
       <div class="main-container">
         <div class="content-wrapper">
-          <div class="content-wrapper-header">
-            <h3>Contact</h3>
-          </div>
-          <div class="content-section">
-            <p>Content for Page 1 goes here...</p>
-          </div>
+         
           
-            <p>Welcome to our website! We are passionate about delivering exceptional experiences and services to our users. Our mission is to innovate, inspire, and connect people through creative solutions and cutting-edge technologies.</p>
-            <p>Founded on the principles of quality, trust, and customer-centricity, our team works tirelessly to ensure your satisfaction. Explore our content, engage with our community, and let us know how we can make your experience even better!</p>
+
+          <!-- Link Section -->
+          <div id="container">
+            <a href="https://www.linkedin.com/in/sameer-akhtari-386ba295/" id="link">LinkedIn</a>
+            <a href="https://github.com/sameerakhtari" id="link">GitHub</a>
+            <a href="mailto:sameer_akhtari@hotmail.com" id="link">Email</a>
+            <a href="https://twitter.com/" id="link">Twitter</a>
+            <a href="https://wa.me/923120306021" id="link">WhatsApp</a>
+            <a href="tel:+923120306021" id="link">Call Me</a>
+            <a href="skype:live:your_skype_id?chat" id="link">Skype</a>
           </div>
-          
+
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    const links = document.querySelectorAll("#link");
+    links.forEach((a, index) => {
+      const letters = a.textContent.split("");
+      const newHTML = letters
+        .map((letter) => `<span class="letter">${letter}</span>`)
+        .join("");
+      a.innerHTML = newHTML;
+    });
+  </script>
 
   <script src="assets/js/main.js"></script>
 </body>
